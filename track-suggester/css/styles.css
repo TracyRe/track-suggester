@@ -7,6 +7,40 @@
   }
 }
 
+.questions {
+  display: flex;
+}
+
+.flex-outer li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.flex-outer > li > label {
+  flex: 1 0 120px;
+  max-width: 280px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.flex-outer > li > label + * {
+  flex: 1 0 220px;
+  max-width: 480px;
+}
+
+label {
+  font-weight: normal;
+}
+
 .recommendation, .courses, .design, .c-sharp, .java, .php, .ruby, .notsure, .nopatience {
   display: none;
+}
+
+.btn-primary {
+  padding: 10px 20px 10px 20px;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  border-radius: 4px;
 }

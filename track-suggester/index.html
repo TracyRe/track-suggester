@@ -12,65 +12,72 @@
 
     <div class="container-fluid">
       <h1>What Programming Language Should I Learn?</h1>
-      <p>Thank you for considering Epicodus. We know that choice of what programming language to learn can be confusing. Answer these questions and we can help you with a suggestion of what course track to take.</p>
+      <p>Thank you for considering Epicodus. We know that the choice of what programming language to learn can be difficult and confusing. Answer a few questions and we can help you with a suggestion of what course track will best suit you.</p>
 
       <!-- ********* BEGIN QUESTIONS ********* -->
       <div class="questions">
         <form id="questions" action="index.html" method="post">
-
-        <label for="frontBack">What's your personal style?</label>
-        <select class="droplist" id="frontBack">
-          <option value=""> </option>
-          <option value="back">As long as my clothes fit and are clean, I don't care what they look like</option>
-          <option value="front">I always make a great impression with my outfits</option>
-          <option value="notsure">What's style?</option>
-        </select>
-
-        <label for="company">What working environment appeals to you most?</label>
-        <select class="droplist" id="company">
-          <option value=""> </option>
-          <option value="c-sharp">The security of a large corporation</option>
-          <option value="php">The intense demands of a fast-paced agency</option>
-          <option value="java">Nike</option>
-          <option value="ruby">The thrill of a startup operation</option>
-          <option value="notsure">I don't know</option>
-        </select>
-
-        <label for="apps">What kind of applications or websites do you see yourself creating?</label>
-        <select class="droplist" id="apps">
-          <option value=""> </option>
-          <option value="java">Mobile apps</option>
-          <option value="ruby">Interactive web applications</option>
-          <option value="php">Small websites for brands, business, and organizations</option>
-          <option value="c-sharp">Big, complicated applications used by businesses</option>
-          <option value="notsure">I'm not sure yet</option>
-        </select>
-
-        <label for="patience">How patient are you?</label>
-        <select class="droplist" id="patience">
-          <option value=""> </option>
-          <option value="nopatience">I have no patience for things that don't work right</option>
-          <option value="somepatience">I get frustrated fairly easily, but I can cope</option>
-          <option value="patient">I'm pretty tolerant when things don't work right</option>
-          <option value="job">I have the patience of Job</option>
-          <option value="notsure">I've never thought about it</option>
-        </select>
-
-        <label for="beer">Pick a beer</label>
-        <select class="droplist" id="beer">
-          <option value=""> </option>
-          <option value="c-sharp">Framboise Lambic</option>
-          <option value="java">Budweiser</option>
-          <option value="php">Heinekin</option>
-          <option value="ruby">Pliny the Elder IPA</option>
-          <option value="javascript">Sierra Nevada Pale Ale</option>
-          <option value="otherbeer">I like beer, but none of these</option>
-          <option value="nobeer">I don't drink beer</option>
-        </select>
-
-        <button class="btn-primary"  type="submit" id="submit" name="button">show me</button>
-
-      </form>
+          <ul class="flex-outer">
+            <li>
+              <label for="beer">Pick a beer</label>
+              <select class="droplist" id="beer">
+                <option value=""> </option>
+                <option value="c-sharp">Framboise Lambic</option>
+                <option value="java">Budweiser</option>
+                <option value="php">Heinekin</option>
+                <option value="ruby">Pliny the Elder IPA</option>
+                <option value="javascript">Sierra Nevada Pale Ale</option>
+                <option value="otherbeer">I like beer, but none of these</option>
+                <option value="nobeer">I don't drink beer</option>
+              </select>
+            </li>
+            <li>
+            <label for="company">What working environment appeals to you most?</label>
+              <select class="droplist" id="company">
+                <option value=""> </option>
+                <option value="corp">Large corporation</option>
+                <option value="agency">Agency</option>
+                <option value="nike">Nike</option>
+                <option value="startup">Startup operation</option>
+                <option value="government">Government</option>
+                <option value="notsure">I don't know</option>
+              </select>
+            </li>
+            <li>
+              <label for="patience">How patient are you?</label>
+              <select class="droplist" id="patience">
+                <option value=""> </option>
+                <option value="nopatience">I have no patience for things that don't work right</option>
+                <option value="somepatience">I get frustrated fairly easily, but I can cope</option>
+                <option value="java">I'm very tolerant when things don't work right</option>
+                <option value="c-sharp">I have the patience of Job</option>
+                <option value="notsure">I've never thought about it</option>
+              </select>
+            </li>
+            <li>
+              <label for="apps">What kind of applications or websites do you see yourself creating?</label>
+              <select class="droplist" id="apps">
+                <option value=""> </option>
+                <option value="java">Mobile apps</option>
+                <option value="ruby">Interactive web applications</option>
+                <option value="php">Small websites for brands, business, and organizations</option>
+                <option value="c-sharp">Big, complicated applications used by businesses</option>
+                <option value="notsure">I'm not sure yet</option>
+              </select>
+            </li>
+            <li>
+              <label for="style">What's your personal style?</label>
+              <select class="droplist" id="style">
+                <option value=""> </option>
+                <option value="nostyle">As long as my clothes don't smell</option>
+                <option value="fashion">Always at the leading edge of fashion</option>
+                <option value="classic">Classic and coordinated</option>
+                <option value="notsure">What's style?</option>
+              </select>
+            </li>
+          </ul>
+          <button class="btn-primary"  type="submit" id="submit" name="button">show me</button>
+        </form>
 
       </div>  <!-- ********* END QUESTIONS ******* -->
 

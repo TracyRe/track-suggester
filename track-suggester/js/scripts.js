@@ -1,20 +1,26 @@
 $(document).ready(function(){
   $("form#questions").submit(function(event){
 
-    var frontBack = $("select#frontBack").val();
+    var style = $("select#style").val();
     var patience = $("select#patience").val();
+    var beer = $("select.beer").val();
+    var company = $("select.company").val();
+    var apps = $("select.apps").val();
 
     if ( patience === "nopatience") {
       console.log(patience);
       $(".container-fluid").children().toggle();
       $(".nopatience").show();
-    } else if (frontBack === "front") {
+    } else if ((style === "fashion") || (style === "classic")) {
       $(".container-fluid").children().toggle();
-        console.log(frontBack);
+        console.log(style);
       $(".courses").show();
       $(".design").show();
     // } else if () {
 
+
+
+    // }
     } else {
       $(".container-fluid").children().toggle();
       $(".notsure").show();
