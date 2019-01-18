@@ -9,13 +9,58 @@
     <title></title>
   </head>
   <body>
-    <div class="cotainer-fluid">
 
+    <div class="container-fluid">
+      <h1>What Programming Language Should I Learn?</h1>
+      <p>Thank you for considering Epicodus. We know that choice of what programming language to learn can be confusing. Answer these questions and we can help you with a suggestion of what course track to take.</p>
+
+      <!-- ********* BEGIN QUESTIONS ********* -->
       <div class="questions">
+        <form id="questions" action="index.html" method="post">
 
-      </div>
+        <label for="frontBack">What's your personal style?</label>
+        <select class="droplist" id="frontBack">
+          <option value=""> </option>
+          <option value="nostyle">As long as my clothes fit and are clean, I don't care what they look like</option>
+          <option value="style">I always make a great impression with my outfits</option>
+          <option value="notsure">What's style?</option>
+        </select>
+
+        <label for="company">What working environment appeals to you most?</label>
+        <select class="droplist" id="company">
+          <option value=""> </option>
+          <option value="corp">The security of a large corporation</option>
+          <option value="agency">The intense demands of a fast-paced agency</option>
+          <option value="nike">Nike</option>
+          <option value="startup">The thrill of a startup</option>
+          <option value="notsure">I don't know</option>
+        </select>
+
+        <label for="apps">What kind of applications do you see yourself building?</label>
+        <select class="droplist" id="apps">
+          <option value=""> </option>
+          <option value="mobile">Mobile apps</option>
+          <option value="agency">Interactive web applications</option>
+          <option value="nike">Small websites for brands, business, and organizations</option>
+          <option value="startup">Big, complicated applications used by businesses</option>
+          <option value="notsure">I'm not sure yet</option>
+
+        <label for="q4">Question4</label>
+        <input type="text" id="q4" name="q4" value="">
+
+        <label for="q5">Question5</label>
+        <input type="text" id="q5" name="q5" value="">
+
+        <button class="btn-primary"  type="submit" id="submit" name="button">show me</button>
+
+      </form>
+
+      </div>  <!-- ********* END QUESTIONS ******* -->
+
+      <!-- ********* BEGIN RECOMMENDATIONS ********* -->
       <div class="recommendation">
         <p>Based on your answers, we recommend that you take</p>
+
         <!-- ********* BEGIN DESIGN ********* -->
         <div class="design">
           <h2>CSS and Design</h2>
@@ -46,9 +91,17 @@
         <div class="ruby">
           <h2>Ruby</h2>
           <p>Ruby is a programming language focused on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. </p>
-      </div>
-    </div>
+        </div>
 
-    </div>
+          <!-- ********* BEGIN NOT SURE ********* -->
+        <div class="notsure">
+          <p>We didn't get enough information to make a good recommendation for you.</p>
+        </div>
+
+        <p>You are welcome to try again with different answers.</p>
+        <button class="btn-primary" type="button" id="redo" name="button">redo</button>
+      </div> <!-- ********* END RECOMMENDATIONS ******* -->
+
+    </div> <!-- ********* END CONTAINER ******* -->
   </body>
 </html>
