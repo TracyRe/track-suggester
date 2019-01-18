@@ -12,129 +12,133 @@
 
     <div class="container-fluid">
       <h1>What Programming Language Should I Learn?</h1>
-      <p>Thank you for considering Epicodus. We know that the choice of what programming language to learn can be difficult and confusing. Answer a few questions and we can help you with a suggestion of what course track will best suit you.</p>
+      <div class="content-wrapper">
 
-      <!-- ********* BEGIN QUESTIONS ********* -->
-      <div class="questions">
-        <form id="questions" action="index.html" method="post">
-          <ul class="flex-outer">
-            <li>
-              <label for="beer">Pick a beer</label>
-              <select class="droplist" id="beer">
-                <option value=""> </option>
-                <option value="c-sharp">Framboise Lambic</option>
-                <option value="java">Budweiser</option>
-                <option value="php">Heinekin</option>
-                <option value="ruby">Pliny the Elder IPA</option>
-                <option value="javascript">Sierra Nevada Pale Ale</option>
-                <option value="otherbeer">I like beer, but none of these</option>
-                <option value="nobeer">I don't drink beer</option>
-              </select>
-            </li>
-            <li>
-            <label for="company">What working environment appeals to you most?</label>
-              <select class="droplist" id="company">
-                <option value=""> </option>
-                <option value="corp">Large corporation</option>
-                <option value="agency">Agency</option>
-                <option value="nike">Nike</option>
-                <option value="startup">Startup operation</option>
-                <option value="government">Government</option>
-                <option value="notsure">I don't know</option>
-              </select>
-            </li>
-            <li>
-              <label for="patience">How patient are you?</label>
-              <select class="droplist" id="patience">
-                <option value=""> </option>
-                <option value="nopatience">I have no patience for things that don't work right</option>
-                <option value="somepatience">I get frustrated fairly easily, but I can cope</option>
-                <option value="java">I'm very tolerant when things don't work right</option>
-                <option value="c-sharp">I have the patience of Job</option>
-                <option value="notsure">I've never thought about it</option>
-              </select>
-            </li>
-            <li>
-              <label for="apps">What kind of applications or websites do you see yourself creating?</label>
-              <select class="droplist" id="apps">
-                <option value=""> </option>
-                <option value="java">Mobile apps</option>
-                <option value="ruby">Interactive web applications</option>
-                <option value="php">Small websites for brands, business, and organizations</option>
-                <option value="c-sharp">Big, complicated applications used by businesses</option>
-                <option value="notsure">I'm not sure yet</option>
-              </select>
-            </li>
-            <li>
-              <label for="style">What's your personal style?</label>
-              <select class="droplist" id="style">
-                <option value=""> </option>
-                <option value="nostyle">As long as my clothes don't smell</option>
-                <option value="fashion">Always at the leading edge of fashion</option>
-                <option value="classic">Classic and coordinated</option>
-                <option value="notsure">What's style?</option>
-              </select>
-            </li>
-          </ul>
-          <button class="btn-primary"  type="submit" id="submit" name="button">show me</button>
-        </form>
+        <p>Thank you for considering Epicodus. We know that the choice of what programming language to learn can be difficult and confusing. Answer a few questions and we can help you with a suggestion of what course track will best suit you.</p>
 
-      </div>  <!-- ********* END QUESTIONS ******* -->
+        <!-- ********* BEGIN QUESTIONS ********* -->
+        <div class="questions">
+          <form id="questions" action="index.html" method="post">
+            <ul class="flex-outer">
+              <li>
+              <label for="company">What working environment appeals to you most?</label>
+                <select class="droplist" id="company" required>
+                  <option value=""> </option>
+                  <option value="corp">Large corporation</option>
+                  <option value="agency">Agency</option>
+                  <option value="nike">Nike</option>
+                  <option value="startup">Startup operation</option>
+                  <option value="government">Government</option>
+                  <option value="notsure">I don't know</option>
+                </select>
+              </li>
+              <li>
+                <label for="patience">How patient are you?</label>
+                <select class="droplist" id="patience" required>
+                  <option value=""> </option>
+                  <option value="nopatience">I have no patience for things that don't work right</option>
+                  <option value="somepatience">I get frustrated fairly easily, but I can cope</option>
+                  <option value="verypatient">I'm very tolerant when things don't work right</option>
+                  <option value="job">I have the patience of Job</option>
+                  <option value="notsure">I've never thought about it</option>
+                </select>
+              </li>
+              <li>
+                <label for="apps">What kind of applications or websites do you see yourself creating?</label>
+                <select class="droplist" id="apps" required>
+                  <option value=""> </option>
+                  <option value="mobile">Mobile apps</option>
+                  <option value="interactive">Interactive web applications</option>
+                  <option value="websites">Small websites for brands, business, and organizations</option>
+                  <option value="enterprise">Big, complicated applications used by businesses</option>
+                  <option value="notsure">I'm not sure yet</option>
+                </select>
+              </li>
+              <li>
+                <label for="style">What's your personal style?</label>
+                <select class="droplist" id="style" required>
+                  <option value=""> </option>
+                  <option value="nostyle">As long as my clothes don't smell</option>
+                  <option value="fashion">I'm known for my fashion-forward approach</option>
+                  <option value="classic">I put a lot of effort into how I look</option>
+                  <option value="notimportant">I'm put together, but it's not that important to me</option>
+                  <option value="notsure">What's style?</option>
+                </select>
+              </li>
+              <li>
+                <label for="beer">Pick a beer</label>
+                <select class="droplist" id="beer" required>
+                  <option value=""> </option>
+                  <option value="c-sharp">Framboise Lambic</option>
+                  <option value="java">Budweiser</option>
+                  <option value="php">Heinekin</option>
+                  <option value="ruby">Pliny the Elder IPA</option>
+                  <option value="javascript">Sierra Nevada Pale Ale</option>
+                  <option value="otherbeer">I like beer, but none of these</option>
+                  <option value="nobeer">I don't drink beer</option>
+                </select>
+              </li>
+            </ul>
+            <button class="btn-primary"  type="submit" id="submit" name="button">show me</button>
+          </form>
 
-      <!-- ********* BEGIN RECOMMENDATIONS ********* -->
-      <div class="recommendation">
-        <div class="courses">
+        </div>  <!-- ********* END QUESTIONS ******* -->
 
-          <p>Based on your answers, we recommend that you take</p>
+        <!-- ********* BEGIN RECOMMENDATIONS ********* -->
+        <div class="recommendation">
+          <div class="courses">
 
-          <!-- ********* BEGIN DESIGN ********* -->
-          <div class="design">
-            <h2>CSS and Design</h2>
-            <p>Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors.</p>
+            <p>Based on your answers, we recommend that you take</p>
 
-            <p>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. </p>
+            <!-- ********* BEGIN DESIGN ********* -->
+            <div class="design">
+              <h2>CSS and Design</h2>
+              <p>Web design is a process of conceptualizing, planning, and building a collection of electronic files that determine the layout, colors, text styles, structure, graphics, images, and use of interactive features that deliver pages to your site visitors.</p>
+
+              <p>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. </p>
+            </div>
+
+            <!-- ********* BEGIN C# ********* -->
+            <div class="c-sharp">
+              <h2>C#</h2>
+              <p>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and printers.</p>
+            </div>
+
+            <!-- ********* BEGIN JAVA ********* -->
+            <div class="java">
+              <h2>Java</h2>
+              <p>Java is arguably the most popular programming language today. It's used for everything from web applications to backend services to mobile applications to embedded systems.</p>
+            </div>
+
+            <!-- ********* BEGIN PHP ********* -->
+            <div class="php">
+              <h2>PHP</h2>
+              <p>PHP is a popular programming language used for web development, especially for content-heavy websites. It's most commonly used with content management systems like WordPress, Drupal, and Joomla, but is also used in many web applications and backends as well.</p>
+            </div>
+
+            <!-- ********* BEGIN RUBY ********* -->
+            <div class="ruby">
+              <h2>Ruby</h2>
+              <p>Ruby is a programming language focused on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. </p>
+            </div>
+
+          </div>
+            <!-- ********* BEGIN NOT SURE ********* -->
+          <div class="notsure">
+            <p>We didn't get enough information to make a good recommendation for you.</p>
           </div>
 
-          <!-- ********* BEGIN C# ********* -->
-          <div class="c-sharp">
-            <h2>C#</h2>
-            <p>CSS is the language for describing the presentation of Web pages, including colors, layout, fonts, and other stylistic choices. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, and printers.</p>
+            <!-- ********* BEGIN NO PATIENCE ********* -->
+          <div class="nopatience">
+            <p>If you really have no patience, programming might not be the career for you.</p>
           </div>
 
-          <!-- ********* BEGIN JAVA ********* -->
-          <div class="java">
-            <h2>Java</h2>
-            <p>Java is arguably the most popular programming language today. It's used for everything from web applications to backend services to mobile applications to embedded systems.</p>
-          </div>
 
-          <!-- ********* BEGIN PHP ********* -->
-          <div class="php">
-            <h2>PHP</h2>
-            <p>PHP is a popular programming language used for web development, especially for content-heavy websites. It's most commonly used with content management systems like WordPress, Drupal, and Joomla, but is also used in many web applications and backends as well.</p>
-          </div>
+          <p>You are welcome to try again with different answers.</p>
+          <button class="btn-primary" type="button" id="redo" name="button">redo</button>
+        </div> <!-- ********* END RECOMMENDATIONS ******* -->
 
-          <!-- ********* BEGIN RUBY ********* -->
-          <div class="ruby">
-            <h2>Ruby</h2>
-            <p>Ruby is a programming language focused on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write. </p>
-          </div>
-
-        </div>
-          <!-- ********* BEGIN NOT SURE ********* -->
-        <div class="notsure">
-          <p>We didn't get enough information to make a good recommendation for you.</p>
-        </div>
-
-          <!-- ********* BEGIN NO PATIENCE ********* -->
-        <div class="nopatience">
-          <p>If you really have no patience, programming might not be the career for you.</p>
-        </div>
-
-
-        <p>You are welcome to try again with different answers.</p>
-        <button class="btn-primary" type="button" id="redo" name="button">redo</button>
-      </div> <!-- ********* END RECOMMENDATIONS ******* -->
-
+      </div>
     </div> <!-- ********* END CONTAINER ******* -->
   </body>
 </html>

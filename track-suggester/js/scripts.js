@@ -3,33 +3,45 @@ $(document).ready(function(){
 
     var style = $("select#style").val();
     var patience = $("select#patience").val();
-    var beer = $("select.beer").val();
-    var company = $("select.company").val();
-    var apps = $("select.apps").val();
+    var beer = $("select#beer").val();
+    var company = $("select#company").val();
+    var apps = $("select#apps").val();
 
     if ( patience === "nopatience") {
-      console.log(patience);
-      $(".container-fluid").children().toggle();
+      $(".content-wrapper").children().toggle();
       $(".nopatience").show();
     } else if ((style === "fashion") || (style === "classic")) {
-      $(".container-fluid").children().toggle();
-        console.log(style);
+      $(".content-wrapper").children().toggle();
       $(".courses").show();
       $(".design").show();
-    // } else if () {
-
-
-
-    // }
+    } else if (( company === "nike") || ( apps === "mobile")) {
+      $(".content-wrapper").children().toggle();
+      $(".courses").show();
+      $(".java").show();
+    } else if ((( company === "agency") || ( company === "government")) && (( apps === "mobile") || ( apps === "websites"))) {
+      $(".content-wrapper").children().toggle();
+      $(".courses").show();
+      $(".php").show();
+    } else if ((( company === "corp") && ( apps === "enterprise")) && (( patience === "verypatient") || ( beer === "java"))) {
+      $(".content-wrapper").children().toggle();
+      $(".courses").show();
+      $(".java").show();
+    } else if ((( company === "corp") && ( apps === "enterprise")) && (( patience === "job") || ( beer === "c-sharp"))) {
+      $(".content-wrapper").children().toggle();
+      $(".courses").show();
+      $(".c-sharp").show();
+    } else if (( company === "startup") || ( apps === "interactive")) {
+      $(".content-wrapper").children().toggle();
+      $(".courses").show();
+      $(".ruby").show();
     } else {
-      $(".container-fluid").children().toggle();
+      $(".content-wrapper").children().toggle();
       $(".notsure").show();
     }
-
     event.preventDefault();
   });
   $("button#redo").click(function(event) {
-     $(".container-fluid").children().toggle();
+     $(".content-wrapper").children().toggle();
      setTimeout(function () {
        location.reload()}, 10);
      event.preventDefault();
