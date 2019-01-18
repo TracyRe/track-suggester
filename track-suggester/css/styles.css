@@ -7,6 +7,37 @@
   }
 }
 
+body {
+  background-color: #efece6;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    font-size: 116%;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 10px rgba(100, 100, 100, 0.5);
+    width: 80%;
+    padding: 20px 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* .content-wrapper p {
+  width: 80%;
+  margin: 1rem auto 0 auto;
+} */
+
 .questions {
   display: flex;
 }
@@ -34,13 +65,29 @@ label {
   font-weight: normal;
 }
 
+.response h2 {
+  text-align: center;
+}
+
 .recommendation, .courses, .design, .c-sharp, .java, .php, .ruby, .notsure, .nopatience {
   display: none;
 }
 
 .btn-primary {
-  padding: 10px 20px 10px 20px;
+  padding: 8px 20px 8px 20px;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: .1em;
   border-radius: 4px;
+  min-width: 150px;
 }
+
+.button-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+ .tryagain {
+   margin-top: 2rem;
+ }

@@ -22,16 +22,7 @@ $(document).ready(function(){
       $(".content-wrapper").children().toggle();
       $(".courses").show();
       $(".php").show();
-    }
-    // } else if ((( company === "corp") && ( apps === "enterprise")) && (( patience === "verypatient") || ( beer === "java"))) {
-    //   $(".content-wrapper").children().toggle();
-    //   $(".courses").show();
-    //   $(".java").show();
-    // } else if ((( company === "corp") && ( apps === "enterprise")) && (( patience === "job") || ( beer === "c-sharp"))) {
-    //   $(".content-wrapper").children().toggle();
-    //   $(".courses").show();
-    //   $(".c-sharp").show();
-     else if (((apps === "enterprise") && (patience === "job")) || ((apps === "enterprise") && ((company === "corp") && (beer === "c-sharp")))) {
+    } else if (((apps === "enterprise") && (patience === "job")) || ((apps === "enterprise") && ((company === "corp") && (beer === "c-sharp")))) {
       $(".content-wrapper").children().toggle();
       $(".courses").show();
       $(".c-sharp").show();
