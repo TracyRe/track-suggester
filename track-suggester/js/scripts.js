@@ -6,6 +6,7 @@ $(document).ready(function(){
     var beer = $("select#beer").val();
     var company = $("select#company").val();
     var apps = $("select#apps").val();
+    var name = $("input#name").val();
 
     if ( patience === "nopatience") {
       $(".content-wrapper").children().toggle();
@@ -38,13 +39,17 @@ $(document).ready(function(){
       $(".content-wrapper").children().toggle();
       $(".notsure").show();
     }
-    console.log(company);
-    console.log(patience);
-    console.log(apps);
-    console.log(style);
-    console.log(beer);
+    $("span.name").append(name);
 
-    event.preventDefault();
+    // DEBUGGING ASSISTANCE
+    // console.log(company);
+    // console.log(patience);
+    // console.log(apps);
+    // console.log(style);
+    // console.log(beer);
+    // console.log(name);
+    // event.preventDefault();
+    
   });
   $("button#redo").click(function(event) {
      $(".content-wrapper").children().toggle();
@@ -52,6 +57,4 @@ $(document).ready(function(){
        location.reload()}, 10);
      event.preventDefault();
    });
-
-
  });

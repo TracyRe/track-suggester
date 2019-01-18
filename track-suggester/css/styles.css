@@ -30,13 +30,22 @@ body {
     width: 80%;
     padding: 20px 40px;
     margin-top: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
-/* .content-wrapper p {
-  width: 80%;
-  margin: 1rem auto 0 auto;
-} */
+@media only screen and (max-width: 1200px) {
+  .content-wrapper {
+      width: 90%;
+      padding: 20px 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+  .content-wrapper {
+      width: 100%;
+      padding: 20px 20px;
+    }
+}
 
 .questions {
   display: flex;
@@ -51,14 +60,14 @@ body {
 
 .flex-outer > li > label {
   flex: 1 0 120px;
-  max-width: 280px;
+  max-width: 800px;
   text-align: right;
   padding-right: 10px;
 }
 
 .flex-outer > li > label + * {
   flex: 1 0 220px;
-  max-width: 480px;
+  max-width: 400px;
 }
 
 label {
@@ -90,4 +99,8 @@ label {
 }
  .tryagain {
    margin-top: 2rem;
+ }
+
+ span.name {
+   font-weight: bold;
  }
