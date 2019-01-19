@@ -15,7 +15,7 @@ Use 'if else' statements to return results.
 
 ## Setup/Installation Requirements
 
-* View at hhttps://tracyre.github.io/code-course-suggester/
+* View at https://tracyre.github.io/code-course-suggester/
 * Clone from https://github.com/TracyRe/track-suggester.git
 * Open in browser of your choice
 * Edit files as desired
