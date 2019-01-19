@@ -48,8 +48,7 @@ $(document).ready(function(){
     // console.log(style);
     // console.log(beer);
     // console.log(name);
-    // event.preventDefault();
-    
+    event.preventDefault();
   });
   $("button#redo").click(function(event) {
      $(".content-wrapper").children().toggle();
