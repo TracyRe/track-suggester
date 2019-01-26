@@ -39,7 +39,10 @@ $(document).ready(function(){
       $(".content-wrapper").children().toggle();
       $(".notsure").show();
     }
-    $("span.name").append(name);
+
+    if (name !== "") {      
+    $("span.name").append(name + ", ");
+  }
 
     // DEBUGGING ASSISTANCE
     // console.log(company);
